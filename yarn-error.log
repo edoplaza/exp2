@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/Cellar/yarn/1.5.1_1/libexec/bin/yarn.js test -- --watch
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.5.1_1/libexec/bin/yarn.js test
 
 PATH: 
   /Users/eduardo/.rvm/gems/ruby-2.2.1/bin:/Users/eduardo/.rvm/gems/ruby-2.2.1@global/bin:/Users/eduardo/.rvm/rubies/ruby-2.2.1/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/eduardo/.rvm/gems/ruby-2.2.1/bin:/Users/eduardo/.rvm/gems/ruby-2.2.1@global/bin:/Users/eduardo/.rvm/rubies/ruby-2.2.1/bin:/Users/eduardo/.rvm/bin
@@ -24,7 +24,7 @@ npm manifest:
       "build:dev": "webpack",
       "build:prod": "webpack -p --env production",
       "dev-server": "webpack-dev-server",
-      "test": "cross-env NODE_ENV= test jest --config=jest.config.json",
+      "test": "cross-env NODE_ENV=test jest --config=jest.config.json",
       "start": "node server/server.js",
       "heroku-postbuild": "yarn run build:prod"
     },
@@ -5761,9 +5761,9 @@ Lockfile:
 
 Trace: 
   Error: Command failed.
-  Exit code: 2
+  Exit code: 1
   Command: sh
-  Arguments: -c cross-env NODE_ENV= test jest --config=jest.config.json --watch
+  Arguments: -c cross-env NODE_ENV=test jest --config=jest.config.json
   Directory: /Users/eduardo/Desktop/expensify2
   Output:
   
